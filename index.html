@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trend Colors — център за декоративни бои, мазилки, латекси, акустични панели и интериорни покрития в Пловдив. Посетете нашите магазини и вижте мострите на живо." />
+  <title>Trend Colors — Декоративни бои, мазилки и интериорни покрития в Пловдив</title>
+
+  <link rel="icon" type="image/png" href="images/trend-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========== HEADER =========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Trend Colors начало">
+        <img class="brand-logo" src="images/trend-logo.png" alt="Trend Colors" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Главна навигация">
+        <a href="#top">Начало</a>
+        <a href="#products">Продукти</a>
+        <a href="#why-visit">Защо да ни посетите</a>
+        <a href="#stores">Магазини</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+
+      <a href="#stores" class="btn btn-primary btn-header">Виж магазините</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Отвори меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="#top">Начало</a>
+      <a href="#products">Продукти</a>
+      <a href="#why-visit">Защо да ни посетите</a>
+      <a href="#stores">Магазини</a>
+      <a href="#contact">Контакти</a>
+      <a href="#stores" class="btn btn-primary">Виж магазините</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- =========== HERO =========== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="container hero-inner hero-centered">
+        <div class="hero-copy reveal">
+          <img class="hero-logo" src="images/trend-logo-white.png" alt="Trend Colors" />
+          <span class="eyebrow center hero-eyebrow">Декоративни покрития · Пловдив</span>
+          <h1 class="hero-title">Избери точния цвят и ефект за стената си — на живо, без да гадаеш по снимки</h1>
+          <p class="hero-sub hero-description">
+            Цветът, който изглежда перфектен на снимка, може да стои съвсем различно у дома. Затова ела в наш магазин в Пловдив, виж реалните мостри, пипни текстурите и избери с консултант покритие, което пасва на твоята стена, светлина и стил. А при покупка на място получаваш и <strong>-10%</strong>.
+          </p>
+
+          <div class="hero-cta hero-actions">
+            <a href="#stores" class="btn btn-gradient btn-lg">Виж маршрут до най-близкия магазин</a>
+            <a href="#offer" class="btn btn-ghost btn-lg">Какво печелиш на място</a>
+          </div>
+        </div>
+
+        <div class="hero-store-gallery reveal">
+
+          <!-- СНИМКА 1: Основен шоурум Македония 99 -->
+          <article class="store-photo-card">
+            <img
+              class="store-photo-image"
+              src="./images/showroom-makedonia.jpg"
+              alt="Основен шоурум Trend Colors на ул. Македония 99, Пловдив"
+              loading="lazy"
+            />
+            <div class="store-photo-overlay"></div>
+            <div class="store-photo-content">
+              <h3>Основен шоурум Македония</h3>
+              <p class="store-photo-address">ул. Македония 99, Пловдив</p>
+              <p class="store-photo-desc">Подходящ за разглеждане на мостри, декоративни ефекти, мазилки, бои и интериорни решения.</p>
+              <a href="https://maps.app.goo.gl/ojmamWGpFcLTidgp6" class="store-photo-button" target="_blank" rel="noopener">
+                Виж маршрут
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- СНИМКА 2: Магазин Пещерско шосе 27 -->
+          <article class="store-photo-card">
+            <img
+              class="store-photo-image"
+              src="./images/store-peshtersko.jpg"
+              alt="Магазин Trend Colors на бул. Пещерско шосе 27, Пловдив"
+              loading="lazy"
+            />
+            <div class="store-photo-overlay"></div>
+            <div class="store-photo-content">
+              <h3>Магазин Пещерско шосе</h3>
+              <p class="store-photo-address">бул. Пещерско шосе 27, Пловдив</p>
+              <p class="store-photo-desc">Удобен магазин за бърза консултация, избор на материали и професионални продукти.</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Trend%20Colors%2C%20%D0%B1%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%89%D0%B5%D1%80%D1%81%D0%BA%D0%BE%20%D1%88%D0%BE%D1%81%D0%B5%2027%2C%204002%20%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" class="store-photo-button" target="_blank" rel="noopener">
+                Виж маршрут
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== TRUST BAR =========== -->
+    <section class="trust-bar">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 18h20"/><path d="M8 12h8"/></svg>
+          </div>
+          <span>Реални мостри и текстури</span>
+        </div>
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <span>Консултация според помещението</span>
+        </div>
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.8 9.4 8 10 4.2-.6 8-5 8-10V6l-8-4z"/></svg>
+          </div>
+          <span>Професионални материали</span>
+        </div>
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span>2 удобни локации в Пловдив</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== OFFER / -10% =========== -->
+    <section class="section offer" id="offer">
+      <div class="container">
+        <div class="offer-card reveal">
+          <div class="offer-glow" aria-hidden="true"></div>
+          <div class="offer-content">
+
+            <div class="offer-text">
+              <span class="eyebrow offer-eyebrow">Специална оферта при посещение на място</span>
+              <h2>Вземи <span class="grad-text">-10%</span> при покупка в наш магазин в Пловдив</h2>
+              <p class="offer-desc">
+                Ела в един от двата ни магазина, виж цветовете и текстурите на живо и вземи -10% отстъпка при покупка на място.
+              </p>
+
+              <ul class="offer-feats">
+                <li>Важи и в двата обекта в Пловдив</li>
+                <li>Получаваш отстъпката при покупка на място</li>
+                <li>Можеш да разгледаш реалните мостри преди избор</li>
+                <li>Наш консултант ще ти помогне да избереш правилния продукт</li>
+              </ul>
+
+              <div class="offer-actions">
+                <a href="#stores" class="btn btn-gradient btn-lg">Избери магазин и вземи -10%</a>
+                <a href="#stores" class="btn btn-ghost-light btn-lg">Виж адресите</a>
+              </div>
+
+              <p class="offer-disclaimer">*Отстъпката важи при покупка на място в един от двата обекта. За повече информация попитай наш консултант.</p>
+            </div>
+
+            <div class="offer-badge-wrap" aria-hidden="true">
+              <div class="offer-badge">
+                <span class="offer-badge-value">-10<span class="offer-badge-pct">%</span></span>
+                <span class="offer-badge-label">при покупка на място</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== WHY VISIT =========== -->
+    <section class="section why" id="why-visit">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Защо да дойдеш на място</span>
+          <h2>Виж декоративната мазилка на живо, преди да избереш</h2>
+          <p class="lede">
+            Текстурата, отблясъкът и крайният ефект на декоративната мазилка се виждат най-добре на реална мостра. В нашите магазини можеш да разгледаш различни покрития, да ги сравниш отблизо и да получиш насока кой вариант е най-подходящ за твоето помещение.
+          </p>
+          <p class="lede">
+            Така избираш с повече сигурност и по-малък риск от грешен ефект на стената.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-num">01</div>
+            <h3>Виждате реалния ефект</h3>
+            <p>Декоративните мазилки, перлените ефекти и текстурите трябва да се видят на живо, за да се изберат правилно.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-num">02</div>
+            <h3>Получавате точна консултация</h3>
+            <p>Помагаме ви да изберете подходящ продукт според основата, помещението, бюджета и желания резултат.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-num">03</div>
+            <h3>Избирате правилните инструменти</h3>
+            <p>При нас ще откриете професионални инструменти за правилно полагане на бои, мазилки и латекси.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-num">04</div>
+            <h3>Получавате цялостно решение</h3>
+            <p>Грундове, бои, мазилки, лакове, хидроизолации, инструменти и декоративни решения на едно място.</p>
+          </article>
+        </div>
+
+        <div class="section-cta reveal">
+          <a href="#stores" class="btn btn-primary btn-lg">Виж адресите на двата магазина</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== PRODUCTS =========== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Продуктови категории</span>
+          <h2>Всичко необходимо за красив и завършен интериор</h2>
+          <p class="lede">
+            Премиум материали, инструменти и декоративни решения за домове, офиси, заведения и професионални проекти.
+          </p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z"/><path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7"/><path d="M14.5 17.5 4.5 15"/></svg>
+            </div>
+            <h3>Декоративни бои и мазилки</h3>
+            <p>Ефектни покрития за акцентни стени, модерни интериори, домове, офиси, заведения и шоуруми.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"/><path d="m5 2 5 5"/><path d="M2 13h15"/><path d="M22 20a2 2 0 1 1-4 0c0-1.6 1.7-2.4 2-4 .3 1.6 2 2.4 2 4Z"/></svg>
+            </div>
+            <h3>Висококачествени латекси</h3>
+            <p>Покривни, устойчиви и красиви интериорни бои за стени и тавани.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg>
+            </div>
+            <h3>Акустични панели</h3>
+            <p>Декоративно и практично решение за по-добра акустика и по-модерен интериор.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="6"/><path d="M9.5 6.5A4 4 0 0 0 8.5 10"/></svg>
+            </div>
+            <h3>Декоративни огледала</h3>
+            <p>Стилен акцент за домове, салони, офиси и търговски пространства.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg>
+            </div>
+            <h3>Епоксидни смоли</h3>
+            <p>За арт ефекти, плотове, подове, декоративни проекти и специални приложения.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Хидроизолации</h3>
+            <p>Решения за защита от влага за бани, тераси, основи и проблемни зони.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="6" rx="1.5"/><rect x="3" y="13.5" width="18" height="6" rx="1.5"/><path d="M7 7v1.5"/><path d="M12.5 7v1.5"/><path d="M10 16v1.5"/><path d="M15.5 16v1.5"/></svg>
+            </div>
+            <h3>Лакове и бои за дърво</h3>
+            <p>За защита, освежаване и декоративна обработка на дървени повърхности.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="6" x="2" y="2" rx="2"/><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect width="4" height="6" x="8" y="16" rx="1"/></svg>
+            </div>
+            <h3>Професионални инструменти</h3>
+            <p>Четки, валяци, маламашки, шпакли и инструменти за правилно полагане.</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.3 6.2a4.55 4.55 0 0 0 5.4 0"/><path d="M7.9 10.7c.9.8 2.4 1.3 4.1 1.3s3.2-.5 4.1-1.3"/><path d="M13.9 3.5a1.93 1.93 0 0 0-3.8-.1l-3 10c-.1.2-.1.4-.1.6 0 1.7 2.2 3 5 3s5-1.3 5-3c0-.2 0-.4-.1-.6Z"/><path d="M5.7 14.3c-1.7.6-2.7 1.5-2.7 2.7 0 2.2 3.9 4 9 4s9-1.8 9-4c0-1.1-1-2.1-2.7-2.6"/></svg>
+            </div>
+            <h3>Пътномаркировъчни бои</h3>
+            <p>Специализирани покрития за маркировка, паркинги, складове и индустриални площи.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== DECORATIVE EFFECTS =========== -->
+    <!-- Add real photos inside ./images/effects/ -->
+    <section class="section effects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Декоративни ефекти</span>
+          <h2>Популярни декоративни мазилки и ефекти</h2>
+          <p class="lede">
+            Разгледайте част от ефектите, които можете да видите на живо в нашите магазини. На място ще ви помогнем да изберете подходящ продукт, цвят и техника на полагане.
+          </p>
+        </div>
+
+        <div class="effects-grid">
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/perlena-mazilka.jpg" alt="Перлена мазилка — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Перлена мазилка</h3>
+              <p>Елегантен блясък и премиум усещане за акцентни стени и модерни интериори.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/piasachna-mazilka.jpg" alt="Пясъчна мазилка — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Пясъчна мазилка</h3>
+              <p>Фина текстура с естествен декоративен ефект, подходяща за стилни и топли интериори.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/brokatena-mazilka.jpg" alt="Брокатена мазилка — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Брокатена мазилка</h3>
+              <p>Декоративен ефект с фин блясък, който придава по-луксозно и впечатляващо излъчване на стената.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/spider-efekt.jpg" alt="Spider ефект — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Spider ефект</h3>
+              <p>Модерен декоративен ефект с характерни линии и динамична текстура за акцентни стени.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/metalik-efekt.jpg" alt="Металик ефект — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Металик ефект</h3>
+              <p>Модерен декоративен завършек с дълбочина, отблясък и силно визуално присъствие.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/venecianska-mazilka.jpg" alt="Венецианска мазилка — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Венецианска мазилка</h3>
+              <p>Луксозен гладък ефект с мраморно усещане и елегантен завършек.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/travertin-efekt.jpg" alt="Травертин ефект — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Травертин ефект</h3>
+              <p>Декоративна визия, вдъхновена от естествен камък и минерални текстури.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/beton-efekt.jpg" alt="Бетон ефект — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Бетон ефект</h3>
+              <p>Модерен индустриален стил за домове, офиси, заведения и търговски пространства.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/satinen-efekt.jpg" alt="Декоративна мазилка с нишки — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Декоративна мазилка с нишки</h3>
+              <p>Мек отблясък и изчистена визия за по-елегантен и спокоен интериор.</p>
+            </div>
+          </article>
+
+          <article class="effect-card reveal">
+            <div class="effect-photo">
+              <!-- Replace with real effect photo -->
+              <img src="images/effects/marmorino-efekt.jpg" alt="Марморино ефект — реална мостра" loading="lazy" />
+              <span class="effect-badge">Може да се види на живо</span>
+            </div>
+            <div class="effect-body">
+              <h3>Марморино ефект</h3>
+              <p>По-изразена текстура за акцентни стени, шоуруми и специални интериорни решения.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA card -->
+        <div class="effects-cta reveal">
+          <div class="effects-cta-glow" aria-hidden="true"></div>
+          <div class="effects-cta-inner">
+            <h3>Не избирайте ефект само по снимка</h3>
+            <p>Декоративните мазилки изглеждат различно според светлината, основата и начина на полагане. Посетете нашите магазини, за да видите реални мостри и да получите консултация.</p>
+            <div class="effects-cta-actions">
+              <a href="#stores" class="btn btn-gradient btn-lg">Виж маршрут до шоурума</a>
+              <a href="#stores" class="btn btn-secondary btn-lg">Виж маршрут до магазина</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========== AUDIENCE =========== -->
+    <section class="section audience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">За кого е подходящо</span>
+          <h2>Решения както за дома, така и за професионалисти</h2>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card reveal"><span>За ремонт у дома</span></div>
+          <div class="audience-card reveal"><span>За майстори</span></div>
+          <div class="audience-card reveal"><span>За интериорни дизайнери</span></div>
+          <div class="audience-card reveal"><span>За бизнес обекти</span></div>
+          <div class="audience-card reveal"><span>За хотели, офиси и заведения</span></div>
+          <div class="audience-card reveal"><span>За хора, които искат акцентна стена</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== BRANDS + ON-SITE COLORING =========== -->
+    <!-- Add real brand logos inside ./images/brands/ -->
+    <section class="section brands">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Марки и оцветяване</span>
+          <h2>Работим с доказани марки и оцветяваме на място</h2>
+          <p class="lede">
+            При нас можете да разгледате продукти от подбрани марки, да сравните мостри и да изберете точния цвят с помощта на консултант — с възможност за оцветяване на място с наши машини.
+          </p>
+        </div>
+
+        <div class="brands-layout">
+
+          <!-- ЛЯВА ЧАСТ: марки -->
+          <div class="brands-panel reveal">
+            <div class="brands-grid">
+              <!-- Replace with real brand logo -->
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-bytech.png" alt="Bytech" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-polisan.png" alt="Polisan" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-valpaint.png" alt="Valpaint" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-dulux.jpg" alt="Dulux" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-anza.png" alt="Anza" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-vivechrom.png" alt="Vivechrom" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-rivedil.png" alt="Rivedil" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-tikkurila.jpg" alt="Tikkurila" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-blue-dolphin.jpg" alt="Blue Dolphin" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-levis.png" alt="Levis" loading="lazy" /></div>
+              <div class="brand-card"><img class="brand-logo-img" src="images/brands/brand-sikkens.png" alt="Sikkens" loading="lazy" /></div>
+            </div>
+          </div>
+
+          <!-- ДЯСНА ЧАСТ: оцветяване на място -->
+          <aside class="colorize-card reveal">
+            <div class="colorize-glow" aria-hidden="true"></div>
+            <div class="colorize-inner">
+              <span class="colorize-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-1-1-1.5-2-1.5h-2A2.5 2.5 0 0 1 14 8a2 2 0 0 0-2-2z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="16" cy="9" r="1"/></svg>
+                Оцветяване на място
+              </span>
+              <h3>Оцветяваме пред теб с професионални тониращи машини</h3>
+              <p>
+                Избираш желания нюанс, а ние подготвяме продукта директно в магазина — пред теб, с професионални тониращи машини. Така виждаш как се случва процесът, получаваш повече сигурност в избора и можеш да вземеш продукта готов за нанасяне.
+              </p>
+
+              <ul class="colorize-feats">
+                <li>
+                  <span class="colorize-dot"></span>
+                  <div>
+                    <strong>Избор на точен нюанс</strong>
+                    <small>Помагаме ти да избереш цвят според помещението, светлината и желания ефект.</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="colorize-dot"></span>
+                  <div>
+                    <strong>Оцветяване пред теб</strong>
+                    <small>Продуктът се тонира на място с професионални машини, директно в магазина.</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="colorize-dot"></span>
+                  <div>
+                    <strong>Консултация преди покупка</strong>
+                    <small>Насочваме те към правилния продукт, грунд и инструмент за полагане.</small>
+                  </div>
+                </li>
+              </ul>
+
+              <a href="#stores" class="btn btn-gradient btn-lg colorize-cta">Ела за избор на цвят</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== STORES =========== -->
+    <section class="section stores" id="stores">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Магазини</span>
+          <h2>Посетете ни в Пловдив</h2>
+          <p class="lede">
+            Изберете удобната за вас локация и елате да видите цветовете, мострите и текстурите на живо.
+          </p>
+        </div>
+
+        <div class="stores-grid">
+
+          <article class="store-card store-card-primary reveal">
+            <div class="store-tag">Основен шоурум</div>
+            <div class="store-visual">
+              <iframe
+                class="store-map"
+                src="https://www.google.com/maps?q=%D0%A2%D0%A0%D0%95%D0%9D%D0%94%20%D0%98%D0%93%20%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%202%20%D0%B8%20%D0%A8%D0%BE%D1%83%D1%80%D1%83%D0%BC%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%8F%2099%2C%204004%20%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2&output=embed"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                title="Карта на ул. Македония 99, Пловдив"
+              ></iframe>
+            </div>
+            <div class="store-body">
+              <h3>ул. Македония 99</h3>
+              <p class="store-city">Пловдив</p>
+              <p class="store-desc">
+                Подходящ за клиенти, които искат да разгледат повече мостри, декоративни ефекти, мазилки, бои и интериорни решения.
+              </p>
+              <ul class="store-feats">
+                <li>Голяма експозиция от мостри</li>
+                <li>Декоративни мазилки и ефекти</li>
+                <li>Консултация на място</li>
+              </ul>
+              <div class="store-actions">
+                <a href="https://maps.app.goo.gl/ojmamWGpFcLTidgp6" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Виж маршрут до шоурума</a>
+                <a href="tel:+359883371588" class="btn btn-ghost">Обади се · 0883 371 588</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="store-card reveal">
+            <div class="store-tag">Магазин</div>
+            <div class="store-visual">
+              <iframe
+                class="store-map"
+                src="https://www.google.com/maps?q=Trend%20Colors%2C%20%D0%B1%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%89%D0%B5%D1%80%D1%81%D0%BA%D0%BE%20%D1%88%D0%BE%D1%81%D0%B5%2027%2C%204002%20%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2&output=embed"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                title="Карта на бул. Пещерско шосе 27, Пловдив"
+              ></iframe>
+            </div>
+            <div class="store-body">
+              <h3>бул. Пещерско шосе 27</h3>
+              <p class="store-city">Пловдив</p>
+              <p class="store-desc">
+                Удобен по-малък магазин за бързо пазаруване, консултация и избор на продукти.
+              </p>
+              <ul class="store-feats">
+                <li>Бърза покупка и съвет</li>
+                <li>Основни бои, латекси, инструменти</li>
+                <li>Удобен паркинг наблизо</li>
+              </ul>
+              <div class="store-actions">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Trend%20Colors%2C%20%D0%B1%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%89%D0%B5%D1%80%D1%81%D0%BA%D0%BE%20%D1%88%D0%BE%D1%81%D0%B5%2027%2C%204002%20%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Виж маршрут до магазина</a>
+                <a href="tel:+359899571587" class="btn btn-ghost">Обади се · 0899 571 587</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== GALLERY =========== -->
+    <section class="section gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow center">Идеи и текстури</span>
+          <h2>Вижте ефектите, които можете да разгледате на живо</h2>
+          <p class="lede">
+            Текстури, акцентни стени, декоративни мазилки и интериорни решения, които могат да преобразят всяко пространство.
+          </p>
+        </div>
+
+        <!-- Медия от папка media/ — видеа (H.264 mp4) и снимки. Клик върху видео го отваря уголемено (без звук, с контроли). Снимките са в края. -->
+        <div class="gallery-grid">
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-2.mp4" poster="media/gallery-2.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-4.mp4" poster="media/gallery-4.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-5.mp4" poster="media/gallery-5.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-6.mp4" poster="media/gallery-6.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-7.mp4" poster="media/gallery-7.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-8.mp4" poster="media/gallery-8.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-9.mp4" poster="media/gallery-9.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-10.mp4" poster="media/gallery-10.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-11.mp4" poster="media/gallery-11.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <video class="gallery-video" src="media/gallery-1.mp4" poster="media/gallery-1.jpg" muted loop playsinline preload="none"></video>
+          </div>
+          <div class="gallery-item reveal">
+            <img class="gallery-media" src="media/gallery-photo-1.jpg" alt="Реализиран проект на Trend Colors" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img class="gallery-media" src="media/gallery-photo-2.jpg" alt="Декоративни покрития в шоурума на Trend Colors" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== FINAL CTA =========== -->
+    <section class="section final-cta">
+      <div class="final-cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="final-cta-inner reveal">
+          <span class="eyebrow center light">Готови за следващата стъпка</span>
+          <h2>Готови ли сте да изберете правилното покритие за вашия интериор?</h2>
+          <p class="lede">
+            Елате на място, вижте реалните мостри и получете консултация за най-подходящия продукт за вашия дом, офис или обект.
+          </p>
+
+          <div class="final-cta-actions">
+            <a href="https://maps.app.goo.gl/ojmamWGpFcLTidgp6" class="btn btn-gradient btn-lg" target="_blank" rel="noopener">Посети шоурума на ул. Македония 99</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Trend%20Colors%2C%20%D0%B1%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%89%D0%B5%D1%80%D1%81%D0%BA%D0%BE%20%D1%88%D0%BE%D1%81%D0%B5%2027%2C%204002%20%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">Посети магазина на бул. Пещерско шосе 27</a>
+            <a href="tel:+359883371588" class="btn btn-ghost-light btn-lg">Обади се за консултация</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#top" class="brand brand-footer">
+          <img class="brand-logo" src="images/trend-logo-white.png" alt="Trend Colors" />
+        </a>
+        <p>Trend Colors — декоративни бои, мазилки, латекси и интериорни решения в Пловдив.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Магазини</h4>
+        <p><strong>Основен шоурум</strong><br/>ул. Македония 99, Пловдив</p>
+        <p><strong>Магазин</strong><br/>бул. Пещерско шосе 27, Пловдив</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Продукти</h4>
+        <ul>
+          <li>Декоративни бои и мазилки</li>
+          <li>Висококачествени латекси</li>
+          <li>Акустични панели</li>
+          <li>Декоративни огледала</li>
+          <li>Епоксидни смоли</li>
+          <li>Хидроизолации</li>
+          <li>Лакове и бои за дърво</li>
+          <li>Професионални инструменти</li>
+          <li>Пътномаркировъчни бои</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакти</h4>
+        <p>
+          <strong>Шоурум Македония 99</strong><br/>
+          <a href="tel:+359883371588">0883 371 588</a>
+        </p>
+        <p>
+          <strong>Магазин Пещерско шосе 27</strong><br/>
+          <a href="tel:+359899571587">0899 571 587</a>
+        </p>
+        <p>
+          <strong>Работно време</strong><br/>
+          Понеделник – Петък: 08:30 – 18:00<br/>
+          Събота: 09:00 – 15:00<br/>
+          Неделя: почивен ден
+        </p>
+        <div class="socials">
+          <a href="https://www.facebook.com/TrendColors" target="_blank" rel="noopener" aria-label="Trend Colors във Facebook">Facebook</a>
+          <a href="https://www.instagram.com/boimazilki" target="_blank" rel="noopener" aria-label="boimazilki в Instagram">Instagram</a>
+          <a href="https://www.tiktok.com/@trend.colors" target="_blank" rel="noopener" aria-label="trend.colors в TikTok">TikTok</a>
+        </div>
+        <!-- TODO: Facebook линкът е базиран на името „Trend Colors". Ако точният адрес на страницата е различен (напр. facebook.com/boimazilki), замени href-а тук. -->
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span id="year"></span> Trend Colors. Всички права запазени.</span>
+        <span class="footer-tag">Декоративни покрития · Пловдив</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========== MOBILE STICKY BAR =========== -->
+  <div class="mobile-cta">
+    <!-- TODO: Замени href с реалния Google Maps линк за най-близкия магазин -->
+    <a href="#stores" class="btn btn-gradient mobile-cta-btn">Маршрут</a>
+    <a href="tel:+359883371588" class="btn btn-primary mobile-cta-btn">Обади се</a>
+  </div>
+
+  <!-- =========== LIGHTBOX (уголемена медия) =========== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Затвори">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="lightbox-inner" id="lightboxInner"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
