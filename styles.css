@@ -781,6 +781,120 @@ p { margin: 0 0 1em; color: var(--muted); }
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* ---------- Offer: how-to-redeem block (compact) ---------- */
+.offer-howto {
+  position: relative;
+  z-index: 1;
+  padding: 0 56px 44px;
+  color: #fff;
+}
+.offer-divider {
+  height: 1px;
+  margin: 2px 0 30px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 15%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.06) 85%, transparent 100%);
+}
+.offer-howto-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 34px;
+  align-items: center;
+}
+.offer-howto-title {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+}
+.offer-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.offer-step {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+.offer-step-num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand-grad);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px -8px rgba(176, 56, 112, 0.6);
+}
+.offer-step strong {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* compact coupon box */
+.offer-coupon {
+  text-align: center;
+  padding: 22px 24px;
+  border-radius: 16px;
+  border: 1.5px dashed rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+.offer-coupon-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6px;
+}
+.offer-coupon-code {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.9rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  margin: 0 0 8px;
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: all;
+}
+.offer-coupon-desc {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+.offer-coupon .btn { width: 100%; }
+.offer-coupon-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s var(--ease);
+}
+#offerCouponCopy.is-copied .offer-coupon-icon { transform: scale(1.15); }
+.offer-howto-disclaimer {
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 62ch;
+  line-height: 1.5;
+}
+
 /* =============================================
    Sections
    ============================================= */
@@ -1732,6 +1846,12 @@ p { margin: 0 0 1em; color: var(--muted); }
   /* Offer: badge above text, everything centered */
   .offer-content { grid-template-columns: 1fr; gap: 32px; padding: 40px 30px; text-align: center; }
   .offer-badge-wrap { order: -1; }
+
+  /* Offer how-to: stack steps, coupon full width */
+  .offer-howto { padding: 0 30px 40px; }
+  .offer-howto-grid { grid-template-columns: 1fr; gap: 24px; }
+  .offer-howto-title { text-align: center; }
+  .offer-steps { max-width: 420px; margin: 0 auto; }
   .offer-desc { margin-left: auto; margin-right: auto; }
   .offer-feats {
     grid-template-columns: 1fr;
@@ -1782,6 +1902,8 @@ p { margin: 0 0 1em; color: var(--muted); }
 
   /* Offer: tighter on small phones */
   .offer-content { padding: 34px 22px; }
+  .offer-howto { padding: 0 22px 34px; }
+  .offer-coupon-code { letter-spacing: 0.1em; }
   .offer-badge { width: 200px; height: 200px; }
   .offer-badge-value { font-size: 3.5rem; }
   .offer-badge-pct { font-size: 2.1rem; }

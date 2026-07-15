@@ -154,4 +154,48 @@
   // -------- Footer year --------
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // -------- Offer coupon: copy TREND10 to clipboard --------
+  const couponBtn = document.getElementById('offerCouponCopy');
+  if (couponBtn) {
+    const textEl = couponBtn.querySelector('.offer-coupon-btn-text');
+    const label = couponBtn.dataset.label || 'Копирай кода';
+    const copied = couponBtn.dataset.copied || 'Кодът е копиран';
+    let resetT = null;
+
+    const setCopied = () => {
+      if (textEl) textEl.textContent = copied;
+      couponBtn.classList.add('is-copied');
+      clearTimeout(resetT);
+      resetT = setTimeout(() => {
+        if (textEl) textEl.textContent = label;
+        couponBtn.classList.remove('is-copied');
+      }, 2000);
+    };
+
+    couponBtn.addEventListener('click', () => {
+      const code = couponBtn.dataset.code || 'TREND10';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(setCopied).catch(() => {
+          fallbackCopy(code);
+          setCopied();
+        });
+      } else {
+        fallbackCopy(code);
+        setCopied();
+      }
+    });
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  }
 })();
